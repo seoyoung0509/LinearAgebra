@@ -1,0 +1,16 @@
+import numpy as np
+
+u = np.array([1, 2, 3])
+v = np.array([-4, 3, 5])
+
+norm_u = np.linalg.norm(u)
+norm_v = np.linalg.norm(v)
+
+difference = v - u
+distance = np.linalg.norm(difference)
+
+print(f"u의 길이 = {norm_u:.6f}")
+print(f"v의 길이 = {norm_v:.6f}")
+print("v - u =", difference)
+print("각 성분의 제곱 =", difference ** 2)
+print(f"두 벡터의 거리 = {distance:.6f}")
